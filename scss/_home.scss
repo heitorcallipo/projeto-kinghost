@@ -1,4 +1,21 @@
 .s-hero {
-    background-color: $purple;
-    margin-top: 11.9rem;
+  background-color: $purple;
+  margin-top: 11.9rem;
+  .container {
+    @include flex(row, center, center);
+    .text {
+      width: 100%;
+      max-width: 55rem;
+      button {
+        padding: ;
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        text-align: center;
+        background-color: $yellow;
+        color: $purple;
+      }
+    }
+  }
 }
