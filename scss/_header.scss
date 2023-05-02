@@ -6,6 +6,7 @@ header {
   height: 11.9rem;
   background-color: $purple;
   display: flex;
+  z-index: 9999;
   .container {
     @include flex(row, center, space-between);
   }
@@ -20,6 +21,10 @@ header {
         a {
           display: flex;
           align-items: center;
+          transition: all .3s;
+          &:hover {
+            transform: scale(1.1);
+          }
           span {
             font-size: 1.6rem;
             margin-left: 1.6rem;
