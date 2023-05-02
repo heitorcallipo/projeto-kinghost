@@ -1,20 +1,47 @@
 .s-hero {
   background-color: $purple;
   margin-top: 11.9rem;
+  height: 57.9rem;
   .container {
     @include flex(row, center, center);
     .text {
       width: 100%;
       max-width: 55rem;
+      h1 {
+        padding-top: 3.9rem;
+      }
+      p {
+        padding-top: 1.6rem;
+      }
       button {
-        padding: ;
-        font-family: "PT Sans";
+        margin-top: 3.6rem;
+        padding: 1.6rem 4rem;
+        font-family: "PT Sans", sans-serif;
         font-weight: 700;
         font-size: 1.6rem;
         line-height: 2.1rem;
         text-align: center;
         background-color: $yellow;
         color: $purple;
+        border-radius: 0.8rem;
+      }
+      .conheca {
+        @include flex(row, center, flex-start);
+        gap: 1.6rem;
+        margin-top: 9.5rem;
+        .icon {
+          background-color: $light-purple;
+          padding: 0.9rem;
+          border-radius: 0.6rem;
+          cursor: pointer;
+        }
+        span {
+          color: $white;
+          font-family: 'Lato', sans-serif;
+          font-weight: 700;
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+        }
       }
     }
   }
