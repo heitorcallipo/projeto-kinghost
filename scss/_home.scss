@@ -24,6 +24,13 @@
         background-color: $yellow;
         color: $purple;
         border-radius: 0.8rem;
+        &:hover {
+          color: $yellow;
+          background-color: $purple;
+          border: 1px solid $yellow;
+          transition: all 0.3s;
+          cursor: pointer;
+        }
       }
       .conheca {
         @include flex(row, center, flex-start);
@@ -34,6 +41,11 @@
           padding: 0.9rem;
           border-radius: 0.6rem;
           cursor: pointer;
+          transition: all 0.3s;
+          &:hover {
+            background-color: $purple;
+            border: 1px solid $white;
+          }
         }
         span {
           color: $white;
@@ -43,6 +55,15 @@
           line-height: 1.9rem;
         }
       }
+    }
+  }
+  @include responsive(991px) {
+    @include flex(column, center, center);
+    .container {
+      justify-content: center;
+    }
+    nav {
+      display: none;
     }
   }
 }
